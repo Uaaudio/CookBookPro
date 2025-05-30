@@ -15,7 +15,7 @@
                 <li><a href={% url "home" %}>Início</a></li>
                 <li><a href= {% url "recipes"%}>Receitas</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href= {%url "login"%}>Login</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +23,7 @@
     <section class="hero">
         <h2>Encontre a receita perfeita para hoje!</h2>
         <p>Explore receitas fáceis e deliciosas para todas as ocasiões.</p>
-        <a href="#" class="btn">Ver Receitas</a>
+        <a href={%url "recipes"%} class="btn">Ver Receitas</a> <!-- Redireciona para a página de receitas -->
     </section>
 
     <section class="highlights">

@@ -1,1 +1,6 @@
 ## Parou na parte de fazer as receitas . (Models e Views)
+
+
+Da uma olhada no recipes (revisar)
+
+Começou a criar o registro (app).

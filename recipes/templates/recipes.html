@@ -1,11 +1,24 @@
-<h2>Todas as receitas</h2>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookBook - Recipes</title>
+    
+<!-- Link para o arquivo CSS -->
+<link rel="stylesheet" href= "{% static "css/recipes.css"%}">
 
+</head>
+
+<h2>Buscar Receita</h2>
+
+
+<!-- Área de busca -->
+<form method="GET" class="search-form">
+    <input type="text" name="q" placeholder="Buscar receitas..." value="{{ request.GET.q }}">
+    <button type="submit">Buscar</button>
+</form>
+
+<!-- Lista de receitas --> <!-- onde vai apaecer as receitas-->
 <div class="recipe-list">
-    <div class="recipe-card">
-        <img src="..." alt="...">
-        <h3>Bolo de Chocolate</h3>
-        <p>Tempo: 45 min | Porções: 8</p>
-        <a href="/receitas/bolo-de-chocolate/" class="btn">Ver Receita</a>
-    </div>
-    <!-- outras receitas -->
+   
 </div>

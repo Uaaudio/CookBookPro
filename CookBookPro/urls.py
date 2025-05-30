@@ -19,9 +19,13 @@ from django.urls import path
 #importando views dos meus apps.
 from home_page import views as home_views
 from recipes import views as recipes_views
+from register import views as register_views
+from login import views as login_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_views.home, name='home'),         # usando home_views.home
     path('recipes/', recipes_views.recipes_page, name='recipes'),  # usando recipes_views.recipes
+    path('register/',register_views.register_page, name='register'),  # usando register_views.register_page
+    path('login/', login_views.login_page, name='login'),  # usando login_views.login_page
 ]
